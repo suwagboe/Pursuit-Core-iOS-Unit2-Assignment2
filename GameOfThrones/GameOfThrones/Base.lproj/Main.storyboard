@@ -39,8 +39,14 @@
                                                         <constraint firstAttribute="width" constant="240" id="OYE-Wk-v22"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="airtime" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJE-jl-Unc">
-                                                    <rect key="frame" x="314" y="108" width="48" height="18"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYP-HT-9ww">
+                                                    <rect key="frame" x="305" y="108" width="15" height="18"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJE-jl-Unc">
+                                                    <rect key="frame" x="340" y="108" width="22" height="18"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -49,20 +55,23 @@
                                             <constraints>
                                                 <constraint firstItem="v8f-pP-M98" firstAttribute="top" secondItem="e4j-wr-VVE" secondAttribute="topMargin" constant="56" id="GQ7-z6-aTY"/>
                                                 <constraint firstItem="paY-uW-OxC" firstAttribute="leading" secondItem="e4j-wr-VVE" secondAttribute="leading" id="QD9-0C-OHk"/>
-                                                <constraint firstItem="FJE-jl-Unc" firstAttribute="leading" secondItem="paY-uW-OxC" secondAttribute="trailing" constant="74" id="Vdg-mq-SAX"/>
+                                                <constraint firstItem="FJE-jl-Unc" firstAttribute="leading" secondItem="paY-uW-OxC" secondAttribute="trailing" constant="100" id="Vdg-mq-SAX"/>
                                                 <constraint firstItem="v8f-pP-M98" firstAttribute="leading" secondItem="paY-uW-OxC" secondAttribute="trailing" constant="42" id="Z1j-eI-3VI"/>
                                                 <constraint firstAttribute="bottom" secondItem="paY-uW-OxC" secondAttribute="bottom" constant="35" id="aaO-hX-sCT"/>
+                                                <constraint firstItem="vYP-HT-9ww" firstAttribute="leading" secondItem="paY-uW-OxC" secondAttribute="trailing" constant="65" id="eG6-Ya-2cQ"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="FJE-jl-Unc" secondAttribute="bottom" constant="61" id="fa0-70-a56"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="vYP-HT-9ww" secondAttribute="bottom" constant="61" id="hW9-Ro-Cvy"/>
                                                 <constraint firstItem="v8f-pP-M98" firstAttribute="trailing" secondItem="e4j-wr-VVE" secondAttribute="trailingMargin" id="hv0-EE-OQa"/>
                                                 <constraint firstItem="paY-uW-OxC" firstAttribute="top" secondItem="e4j-wr-VVE" secondAttribute="top" constant="35" id="k7T-Pn-kwy"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="FJE-jl-Unc" secondAttribute="trailing" constant="32" id="q9n-Gd-S3y"/>
+                                                <constraint firstItem="FJE-jl-Unc" firstAttribute="leading" secondItem="vYP-HT-9ww" secondAttribute="trailing" constant="20" id="z34-Ul-69H"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <outlet property="airtimeNameLabel" destination="FJE-jl-Unc" id="32y-fL-l9O"/>
                                             <outlet property="episodeNameLabel" destination="v8f-pP-M98" id="J6C-ib-YLI"/>
                                             <outlet property="mediumImage" destination="paY-uW-OxC" id="yXW-5O-F2j"/>
+                                            <outlet property="seasonNameLabel" destination="FJE-jl-Unc" id="32y-fL-l9O"/>
                                             <segue destination="NcN-4y-s0j" kind="show" id="xNP-VT-Xns"/>
                                         </connections>
                                     </tableViewCell>
@@ -85,8 +94,14 @@
                                                         <constraint firstAttribute="width" constant="240" id="LUc-JG-si6"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="airtime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYJ-Rk-N5k">
-                                                    <rect key="frame" x="52" y="102" width="50" height="18"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7W-rw-aKx">
+                                                    <rect key="frame" x="94" y="102" width="10" height="18"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYJ-Rk-N5k">
+                                                    <rect key="frame" x="52" y="102" width="22" height="18"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -98,14 +113,17 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="fYJ-Rk-N5k" secondAttribute="bottom" constant="61" id="BzS-QZ-fxT"/>
                                                 <constraint firstAttribute="bottom" secondItem="3Hu-VR-UVM" secondAttribute="bottom" constant="32" id="CeO-9t-cI9"/>
                                                 <constraint firstItem="fYJ-Rk-N5k" firstAttribute="leading" secondItem="h6R-FA-eCi" secondAttribute="leadingMargin" constant="32" id="GAh-gX-9E1"/>
+                                                <constraint firstItem="3Hu-VR-UVM" firstAttribute="leading" secondItem="M7W-rw-aKx" secondAttribute="trailing" constant="70" id="GZV-B9-OAN"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="M7W-rw-aKx" secondAttribute="bottom" constant="61" id="GsS-8Y-voR"/>
+                                                <constraint firstItem="M7W-rw-aKx" firstAttribute="leading" secondItem="fYJ-Rk-N5k" secondAttribute="trailing" constant="20" id="Hnv-Xf-Di8"/>
                                                 <constraint firstItem="3Hu-VR-UVM" firstAttribute="top" secondItem="h6R-FA-eCi" secondAttribute="top" constant="32" id="IHU-Kf-LJz"/>
                                                 <constraint firstItem="NUd-qD-Bik" firstAttribute="leading" secondItem="h6R-FA-eCi" secondAttribute="leadingMargin" id="JmZ-eU-olE"/>
                                                 <constraint firstAttribute="trailing" secondItem="3Hu-VR-UVM" secondAttribute="trailing" id="hRK-5M-Xp2"/>
-                                                <constraint firstItem="3Hu-VR-UVM" firstAttribute="leading" secondItem="fYJ-Rk-N5k" secondAttribute="trailing" constant="72" id="jQH-St-LHR"/>
+                                                <constraint firstItem="3Hu-VR-UVM" firstAttribute="leading" secondItem="fYJ-Rk-N5k" secondAttribute="trailing" constant="100" id="jQH-St-LHR"/>
                                             </constraints>
                                             <connections>
-                                                <outlet property="airtimelabel" destination="fYJ-Rk-N5k" id="jee-wj-wUj"/>
                                                 <outlet property="episodeNameLabel" destination="NUd-qD-Bik" id="Wbh-fk-SF1"/>
+                                                <outlet property="episodenumberlabel" destination="fYJ-Rk-N5k" id="jee-wj-wUj"/>
                                                 <outlet property="mediumImage" destination="3Hu-VR-UVM" id="zs6-Xi-szl"/>
                                             </connections>
                                         </tableViewCellContentView>

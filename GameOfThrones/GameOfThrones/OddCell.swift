@@ -14,9 +14,16 @@ class OddCell: UITableViewCell {
     
     @IBOutlet weak var mediumImage: UIImageView!
     @IBOutlet weak var episodeNameLabel: UILabel!
-    @IBOutlet weak var airtimeNameLabel: UILabel!
+    @IBOutlet weak var seasonNameLabel: UILabel!
+    @IBOutlet weak var episodeNumberLabel: UILabel!
     
-    
+    func oddConfigureCell(for oddCell: GOTEpisode) {
+        mediumImage.image = UIImage(named: oddCell.mediumImageID)
+        episodeNameLabel.text = oddCell.name
+        seasonNameLabel.text = "S: \(oddCell.season)"
+        episodeNumberLabel.text = "E: \(oddCell.number)"
+        
+    }
     
    
 
