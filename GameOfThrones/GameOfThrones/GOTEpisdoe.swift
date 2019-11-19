@@ -98,4 +98,46 @@ class GOTEpisode {
         GOTEpisode(airdate: "2017-08-20", id: 1221414, name: "Beyond the Wall", number: 6, season: 7, runtime: 60, summary: "Jon's mission continues north of the wall, but the odds against his ragged band of misfits may be greater than he imagined.", mediumImageID: "312651", originalImageID: "312651"),
         GOTEpisode(airdate: "2017-08-27", id: 1221415, name: "The Dragon and the Wolf", number: 7, season: 7, runtime: 60, summary: "Cersei sits on the Iron Throne; Daenerys sails across the Narrow Sea; Jon Snow is King in the North, and winter is finally here.", mediumImageID: "314502", originalImageID: "314502")
     ]
+    
+    // first I want to organize the episodes based on the seasons
+    
+    static func getSeasons() -> [[GOTEpisode]] {
+        
+        // goes through all the episodes and orgainzes the eposiodes based on the seasons
+        // you need to keep typing it out even though it nay not populate
+        let sortedSeasons = allEpisodes.sorted { $0.season < $1.season }
+        
+        // mapping through the elememnts and create unique titles
+        // go through all of the episodes and get the set of the seasons
+        let seasonNumber: Set<Int> = Set(allEpisodes.map { $0.season })
+        
+        // creating an array of arrays to hold the different episodes per seaosn
+        var seasonsArr = Array(repeating: [GOTEpisode]() , count: seasonNumber.count)
+        
+        var currentIndex = 0
+        var currentSeason = sortedSeasons.first?.season ?? nil
+        
+        for episode in sortedSeasons {
+            
+            if episode.season == currentSeason {
+                
+                seasonsArr[currentIndex].append(episode)
+            } else {
+                // changes the index
+                currentIndex += 1
+                
+                // make this new index == the season of this current episode
+                currentSeason = episode.season
+                
+                //apped this episode to the new array that we are in
+                seasonsArr[currentIndex].append(episode)
+            }
+            print("There are \(seasonNumber.count) seaons in the game of thrones")
+            
+        }
+        
+        return seasonsArr
+    }
+    
+    
 }
