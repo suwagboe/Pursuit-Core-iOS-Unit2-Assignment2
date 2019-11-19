@@ -133,9 +133,7 @@ class GOTEpisode {
                 seasonsArr[currentIndex].append(episode)
             }
             print("There are \(seasonNumber.count) seaons in the game of thrones")
-            
         }
-        
         return seasonsArr
     }
     
