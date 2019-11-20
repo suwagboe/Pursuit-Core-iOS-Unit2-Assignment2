@@ -27,5 +27,19 @@ class detailsViewController: UIViewController {
 
     }
     
+    func updateUI(){
+        guard let theEpisode = selectedEpisode else {
+            fatalError("the reassignment of the selectedEpisode did not compile")
+        }
+        
+        
+        navigationItem.title = theEpisode.name
+        OriginalImage.image = UIImage(named: (theEpisode.originalImageID.description))
+        seasonLabel.text = "Seaoson: \(theEpisode.season))"
+        episodeLabel.text = "Episode: \(theEpisode.number)"
+        runtimeLabel.text = "Runtime: \(theEpisode.runtime)"
+        airtimeLabel.text = "Airtime: \(theEpisode.airdate)"
+        
+    }
 
 }
