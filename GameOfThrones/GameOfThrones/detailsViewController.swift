@@ -24,10 +24,12 @@ class detailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+updateUI()
     }
     
-    func updateUI(){
+
+    
+    func updateUI() {
         guard let theEpisode = selectedEpisode else {
             fatalError("the reassignment of the selectedEpisode did not compile")
         }
@@ -39,6 +41,7 @@ class detailsViewController: UIViewController {
         episodeLabel.text = "Episode: \(theEpisode.number)"
         runtimeLabel.text = "Runtime: \(theEpisode.runtime)"
         airtimeLabel.text = "Airtime: \(theEpisode.airdate)"
+        textView.text = theEpisode.summary
         
     }
 

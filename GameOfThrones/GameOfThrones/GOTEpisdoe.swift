@@ -109,13 +109,13 @@ class GOTEpisode {
         
         // mapping through the elememnts and create unique titles
         // go through all of the episodes and get the set of the seasons
-        let seasonNumber: Set<Int> = Set(allEpisodes.map { $0.season })
+        let seasonNumber: Set<Int> = Set(sortedSeasons.map { $0.season })
         
         // creating an array of arrays to hold the different episodes per seaosn
         var seasonsArr = Array(repeating: [GOTEpisode]() , count: seasonNumber.count)
         
         var currentIndex = 0
-        var currentSeason = sortedSeasons.first?.season ?? nil
+        var currentSeason = sortedSeasons.first?.season ?? 1
         
         for episode in sortedSeasons {
             
@@ -132,7 +132,6 @@ class GOTEpisode {
                 //apped this episode to the new array that we are in
                 seasonsArr[currentIndex].append(episode)
             }
-            print("There are \(seasonNumber.count) seaons in the game of thrones")
         }
         return seasonsArr
     }
