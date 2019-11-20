@@ -6,6 +6,7 @@
 //  Copyright © 2018 Pursuit. All rights reserved.
 //
 
+// why do we use table views it is a way to show data
 import UIKit
 
 class mainViewController: UIViewController {
@@ -54,7 +55,7 @@ extension mainViewController: UITableViewDataSource {
         let firstPickedEpisode = episode[indexPath.section][indexPath.row]
 
 //        var cell: episodeCell!
-        
+      
         if indexPath.section % 2 == 0 {
             
             guard let thisEpisode = tableView.dequeueReusableCell(withIdentifier: "evenCell", for: indexPath) as? episodeCell else {
@@ -64,6 +65,7 @@ extension mainViewController: UITableViewDataSource {
             thisEpisode.oddConfigureCell(for: firstPickedEpisode)
             
             return thisEpisode
+            
         } else {
             guard let thisEpisode = tableView.dequeueReusableCell(withIdentifier: "oddCell", for: indexPath) as? episodeCell else {
                 fatalError("the dequeue didnt work for the odd cell ")
