@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C1CE5CA2384A033000534D3 /* OddCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1CE5C92384A033000534D3 /* OddCell.swift */; };
+		3C1CE5CA2384A033000534D3 /* episodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1CE5C92384A033000534D3 /* episodeCell.swift */; };
 		3C1CE5CC2384A057000534D3 /* EvenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1CE5CB2384A057000534D3 /* EvenCell.swift */; };
 		3C1CE5CE2384A589000534D3 /* detailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1CE5CD2384A589000534D3 /* detailsViewController.swift */; };
 		57D0D22A219F70EA00B5753A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D0D229219F70EA00B5753A /* AppDelegate.swift */; };
@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3C1CE5C92384A033000534D3 /* OddCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddCell.swift; sourceTree = "<group>"; };
+		3C1CE5C92384A033000534D3 /* episodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = episodeCell.swift; sourceTree = "<group>"; };
 		3C1CE5CB2384A057000534D3 /* EvenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvenCell.swift; sourceTree = "<group>"; };
 		3C1CE5CD2384A589000534D3 /* detailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailsViewController.swift; sourceTree = "<group>"; };
 		57D0D226219F70EA00B5753A /* GameOfThrones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameOfThrones.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,7 +64,7 @@
 			children = (
 				57D0D23B219F719C00B5753A /* GOTEpisdoe.swift */,
 				57D0D22D219F70EA00B5753A /* Main.storyboard */,
-				3C1CE5C92384A033000534D3 /* OddCell.swift */,
+				3C1CE5C92384A033000534D3 /* episodeCell.swift */,
 				3C1CE5CB2384A057000534D3 /* EvenCell.swift */,
 				57D0D22B219F70EA00B5753A /* mainViewController.swift */,
 				3C1CE5CD2384A589000534D3 /* detailsViewController.swift */,
@@ -152,7 +152,7 @@
 				57D0D22C219F70EA00B5753A /* mainViewController.swift in Sources */,
 				57D0D22A219F70EA00B5753A /* AppDelegate.swift in Sources */,
 				3C1CE5CC2384A057000534D3 /* EvenCell.swift in Sources */,
-				3C1CE5CA2384A033000534D3 /* OddCell.swift in Sources */,
+				3C1CE5CA2384A033000534D3 /* episodeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

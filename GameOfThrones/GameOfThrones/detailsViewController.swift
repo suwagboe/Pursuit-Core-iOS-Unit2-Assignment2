@@ -11,30 +11,21 @@ import UIKit
 class detailsViewController: UIViewController {
     
     
-  // @IBOutlet weak var OriginalImage: UIImageView!
-    @IBOutlet weak var season: UILabel!
-       @IBOutlet weak var episode: UILabel!
-       @IBOutlet weak var runtime: UILabel!
-       @IBOutlet weak var airtime: UILabel!
+   @IBOutlet weak var OriginalImage: UIImageView!
+    @IBOutlet weak var seasonLabel: UILabel!
+       @IBOutlet weak var episodeLabel: UILabel!
+       @IBOutlet weak var runtimeLabel: UILabel!
+       @IBOutlet weak var airtimeLabel: UILabel!
        
-     //  @IBOutlet weak override var textView: UITextView!
+       @IBOutlet weak var textView: UITextView!
+    
+    var selectedEpisode: GOTEpisode?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
